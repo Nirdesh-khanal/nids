@@ -1,0 +1,84 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-bg-input);
+  border: 1px solid var(--color-border-default);
+  border-radius: $radius-md;
+  transition: all $transition-fast;
+
+  &:focus-within {
+    border-color: var(--color-accent-cyan);
+    box-shadow: 0 0 0 2px var(--color-accent-cyan-subtle);
+  }
+
+  &.hasError {
+    border-color: var(--color-severity-critical);
+
+    &:focus-within {
+      box-shadow: 0 0 0 2px var(--color-severity-critical-bg);
+    }
+  }
+
+  &.disabled {
+    opacity: 0.6;
+    background-color: var(--color-bg-surface-muted);
+    cursor: not-allowed;
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 0.875rem;
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  outline: none;
+
+  &::placeholder {
+    color: var(--color-text-disabled);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.leftIcon {
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.rightIcon {
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-muted);
+}
+
+.errorMessage {
+  font-size: 0.75rem;
+  color: var(--color-severity-critical);
+  margin-top: 2px;
+}

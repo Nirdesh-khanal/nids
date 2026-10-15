@@ -1,0 +1,75 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.selectContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-bg-input);
+  border: 1px solid var(--color-border-default);
+  border-radius: $radius-md;
+  transition: all $transition-fast;
+
+  &:focus-within {
+    border-color: var(--color-accent-cyan);
+    box-shadow: 0 0 0 2px var(--color-accent-cyan-subtle);
+  }
+
+  &.hasError {
+    border-color: var(--color-severity-critical);
+  }
+
+  &.disabled {
+    opacity: 0.6;
+    background-color: var(--color-bg-surface-muted);
+    cursor: not-allowed;
+  }
+}
+
+.select {
+  width: 100%;
+  padding: 8px 32px 8px 12px;
+  font-size: 0.875rem;
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+
+  option {
+    background-color: var(--color-bg-surface);
+    color: var(--color-text-primary);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.arrowIcon {
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+  color: var(--color-text-muted);
+}
+
+.errorMessage {
+  font-size: 0.75rem;
+  color: var(--color-severity-critical);
+  margin-top: 2px;
+}

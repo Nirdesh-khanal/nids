@@ -1,0 +1,53 @@
+@use '../abstracts/variables' as *;
+
+body {
+  font-family: $font-sans;
+  font-size: 0.875rem; // 14px base
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--color-text-primary);
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-size: 1.5rem; // 24px
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.25rem; // 20px
+}
+
+h3 {
+  font-size: 1.125rem; // 18px
+}
+
+h4 {
+  font-size: 1rem; // 16px
+}
+
+code, kbd, samp, pre {
+  font-family: $font-mono;
+  font-size: 0.8125rem; // 13px
+}
+
+.text-mono {
+  font-family: $font-mono;
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-cyan {
+  color: var(--color-accent-cyan);
+}

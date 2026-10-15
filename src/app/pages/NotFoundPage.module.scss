@@ -1,0 +1,43 @@
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
+
+.notFoundContainer {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 16px;
+  gap: 16px;
+}
+
+.errorCode {
+  font-size: 5rem;
+  font-weight: 800;
+  font-family: $font-mono;
+  letter-spacing: -0.05em;
+  color: var(--color-accent-cyan);
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+}
+
+.errorTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.errorDesc {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  max-width: 480px;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}

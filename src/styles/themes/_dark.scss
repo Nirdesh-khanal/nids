@@ -1,0 +1,81 @@
+// Dark Theme Tokens (Default for Sentinel NIDS)
+:root,
+[data-theme='dark'] {
+  --color-scheme: dark;
+
+  // Background Surfaces
+  --color-bg-base: #090d16;
+  --color-bg-surface: #0f172a;
+  --color-bg-surface-hover: #17233f;
+  --color-bg-surface-active: #1e293b;
+  --color-bg-surface-muted: #131d33;
+  --color-bg-card: #0d1527;
+  --color-bg-sidebar: #0b1120;
+  --color-bg-topbar: #0c1322;
+  --color-bg-input: #111a2e;
+
+  // Text Colors
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --color-text-disabled: #475569;
+  --color-text-inverse: #090d16;
+
+  // Borders
+  --color-border-subtle: #1e293b;
+  --color-border-default: #25334d;
+  --color-border-strong: #334155;
+
+  // Brand Accents (Restrained Cyan & Blue)
+  --color-accent-cyan: #06b6d4;
+  --color-accent-cyan-subtle: rgba(6, 182, 212, 0.12);
+  --color-accent-cyan-hover: #0891b2;
+  --color-accent-blue: #3b82f6;
+  --color-accent-blue-subtle: rgba(59, 130, 246, 0.12);
+  --color-accent-blue-hover: #2563eb;
+
+  // Severity Colors
+  --color-severity-critical: #ef4444;
+  --color-severity-critical-bg: rgba(239, 68, 68, 0.12);
+  --color-severity-critical-border: rgba(239, 68, 68, 0.3);
+
+  --color-severity-high: #f97316;
+  --color-severity-high-bg: rgba(249, 115, 22, 0.12);
+  --color-severity-high-border: rgba(249, 115, 22, 0.3);
+
+  --color-severity-medium: #eab308;
+  --color-severity-medium-bg: rgba(234, 179, 8, 0.12);
+  --color-severity-medium-border: rgba(234, 179, 8, 0.3);
+
+  --color-severity-low: #38bdf8;
+  --color-severity-low-bg: rgba(56, 189, 248, 0.12);
+  --color-severity-low-border: rgba(56, 189, 248, 0.3);
+
+  --color-severity-info: #10b981;
+  --color-severity-info-bg: rgba(16, 185, 129, 0.12);
+  --color-severity-info-border: rgba(16, 185, 129, 0.3);
+
+  // Status Indicators
+  --color-status-online: #10b981;
+  --color-status-online-bg: rgba(16, 185, 129, 0.12);
+  --color-status-offline: #ef4444;
+  --color-status-offline-bg: rgba(239, 68, 68, 0.12);
+  --color-status-warning: #f59e0b;
+  --color-status-warning-bg: rgba(245, 158, 11, 0.12);
+
+  // Chart Colors
+  --chart-cyan: #06b6d4;
+  --chart-blue: #3b82f6;
+  --chart-indigo: #6366f1;
+  --chart-emerald: #10b981;
+  --chart-amber: #f59e0b;
+  --chart-rose: #f43f5e;
+  --chart-grid: rgba(255, 255, 255, 0.06);
+  --chart-tooltip-bg: #0b1120;
+  --chart-tooltip-border: #25334d;
+
+  // Elevation / Shadows
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
+}
